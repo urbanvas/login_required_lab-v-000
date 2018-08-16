@@ -14,6 +14,6 @@ class SessionsController < ApplicationController
 
   def destory
     session.delete :name
-
+    redirect_to controller: 'application', action: 'hello'
   end
 end
