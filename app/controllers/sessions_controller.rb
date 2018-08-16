@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
     end
   end
 
-  def destory
+  def destroy
     session.delete :name
     redirect_to controller: 'application', action: 'hello'
   end
